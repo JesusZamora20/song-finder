@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 import SongArtist from './songArtist';
 import SongLyric from './songLyric';
@@ -5,7 +6,7 @@ import SongLyric from './songLyric';
 function SongDetails({search,lyric,bio}) {
     return ( 
     <>
-        <h2>Details</h2>
+        <Typography variant='subtitle2'>Details</Typography>
         <SongArtist />
         <SongLyric />
     </> 

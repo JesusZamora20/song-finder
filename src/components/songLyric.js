@@ -1,9 +1,10 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 
 function SongLyric() {
     return (
     <>
-        <h2>Song Lyric</h2>
+        <Typography variant='subtitle2'>Song Lyric</Typography>
     </>
     );
 }

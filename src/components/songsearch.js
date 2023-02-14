@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SongDetails from './songDetails';
 import SongForm from './songForm';
+import { Typography } from '@mui/material';
 
 
 function SongSearch() {
@@ -10,13 +11,13 @@ function SongSearch() {
     const [loading, setLoading] = useState(false);
 
     const handleSearch = (data) => {
-        console.log(data);
+        // console.log(data);
+        setSearch(data);
     }
-
     
     return (
         <>
-            <h2>Song Search</h2>
+            <Typography variant='h4'>Song Search</Typography>
             <br/>
             <SongForm handleSearch={handleSearch}/>
             <SongDetails
